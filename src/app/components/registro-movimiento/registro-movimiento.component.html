@@ -1,0 +1,30 @@
+<div class="registro-movimiento">
+  <mat-card class="registro-card">
+    <h1>Registrar Movimiento</h1>
+    <form #form="ngForm" (ngSubmit)="onAddMovimiento(form)">
+      <div class="form-group">
+         <label for="nombre">Tipo de Movimiento</label>
+         <select name="tipo">
+          <option value="d">Debito</option>
+          <option value="c">Credito</option>
+        </select>
+      </div>
+      <div class="form-group">
+         <label for="documento">Numero de Documento</label>
+         <input type="text" ngModel name="documento" class="form-control" id="documento" required>
+      </div>
+      <div class="form-group">
+         <label for="direccion">Direccion</label>
+         <input type="text" ngModel name="direccion" class="form-control" id="direccion" required>
+      </div>
+      <div class="form-group">
+         <label for="telefono">Telefono</label>
+         <input type="text" ngModel name="telefono" class="form-control" id="telefono" required>
+      </div>
+
+      <div class="form-buttons">
+        <button id="add-cliente-button" mat-raised-button color="primary">Registrar</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

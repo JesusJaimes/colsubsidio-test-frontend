@@ -1,0 +1,48 @@
+.clientes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.cliente-card {
+  max-width: 400px;
+  background-color: #e7e9f6;
+  margin: 1rem;
+}
+
+.cliente-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.registro-cliente{
+  display: flex;
+  justify-content: center;
+}
+
+.registro-card {
+  width: 20rem;
+  background-color: #e7e9f6;
+  margin: 4rem;
+  padding: 3rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.form-group input{
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border: solid 1px;
+  border-radius: 3px;
+}
+
+.form-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

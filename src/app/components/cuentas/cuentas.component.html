@@ -1,0 +1,17 @@
+<div class="cuentas">
+  <button mat-raised-button class="button-crear-cuenta" color="primary" (click)="onAddCuenta()">Crear Cuenta</button>
+  <ng-container *ngFor="let cuenta of cliente.cuentas">
+    <mat-card class="cuenta-card">
+      <mat-card-header>
+        <mat-card-title>Numero de cuenta: {{cuenta.numero}}</mat-card-title>
+        <mat-card-subtitle>Saldo disponible {{cuenta.saldo}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="goToRegistroMovimientos(cuenta.numero, cliente.documento)">Registrar Movimiento</button>
+        <button mat-raised-button color="primary" (click)="goToMovimientosCuenta(cuenta.numero)">Reporte de Movimiento</button>
+        <button mat-raised-button color="warn" (click)="onDeleteCuenta(cuenta.numero)">Eliminar</button>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="clientes">
+  <ng-container *ngFor="let cliente of clientes">
+    <mat-card class="cliente-card">
+      <mat-card-header>
+        <div mat-card-avatar class="cliente-image"></div>
+        <mat-card-title>{{cliente.nombre}}</mat-card-title>
+        <mat-card-subtitle>Cliente de Colsubsidio Bank</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>C.C. {{cliente.documento}}</p>
+        <p>Direccion: {{cliente.direccion}}</p>
+        <p>Tel: {{cliente.telefono}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="goToCuentasCliente(cliente.documento)">Ver Cuentas</button>
+        <button mat-raised-button color="primary" (click)="goToEditCliente(cliente.documento)">Editar</button>
+        <button mat-raised-button color="warn" (click)="onDeleteCliente(cliente.documento)">Eliminar</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </ng-container>
+
+</div>

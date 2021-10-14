@@ -1,0 +1,19 @@
+.cuentas{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 3rem;
+}
+
+.button-crear-cuenta{
+  width: 25rem;
+  margin: 1rem;
+}
+
+.cuenta-card{
+  width: 40rem;
+  margin: 1.2rem;
+  padding: 2rem;
+  background-color: #e7e9f6;
+}

@@ -1,0 +1,30 @@
+.edit-cliente{
+  display: flex;
+  justify-content: center;
+}
+
+.edit-card {
+  width: 25rem;
+  background-color: #e7e9f6;
+  margin: 4rem;
+  padding: 3rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.form-group input{
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border: solid 1px;
+  border-radius: 3px;
+}
+
+.form-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
